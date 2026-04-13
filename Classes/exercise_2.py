@@ -7,10 +7,17 @@ class User():
             self.address=address
             self.nationality=nationality
       def describe_user(self):
-            print(f"First Name of User is {self.first_name().title()}")
-            print(f"Last Name of user is {self.last_name().title()}")
-            print(f"Address of user is {self.address().title()}")
-            print(f"The nationality of user is {self.nationlaity().title()}")
+            print(f"First Name of User is {self.first_name.title()}")
+            print(f"Last Name of user is {self.last_name.title()}")
+            print(f"Address of user is {self.address.title()}")
+            print(f"The nationality of user is {self.nationality.title()}")
       def greet_user(self):
-            print(f"Hello {self.first_name().title()}, You are welcome to work in Amazon")
+            print(f"Hello {self.first_name.title()}, You are welcome to work in Amazon")
 
+user1=User('Subash', 'Sapkota','Berlin','Nepali')
+user1.describe_user()
+user1.greet_user()
+
+user2=User('Prabhnoor', 'Singh', 'Berlin','Indian')
+user2.describe_user()
+user2.greet_user()
