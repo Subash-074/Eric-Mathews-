@@ -1,3 +1,4 @@
+#Electric car final version 
 """
 You don't always have to start from scratch when writing a class. If the class you're writing is a specialized version of another class you wrote, you can use inheritance. 
 
@@ -55,6 +56,11 @@ class Battery():
             message='This car can go approximately '+str(range)
             message+=' miles on a full charge.'
             print(message)
+      def upgrade_battery(self):
+            if self.battery_size!=85:
+                  self.battery_size=85
+
+
 
 
 #child class 
@@ -75,23 +81,8 @@ class ElectricCar(Car):
       def describe_battery(self):
             self.battery.describe_battery()
             self.battery.get_range()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            self.battery.upgrade_battery()
+            self.battery.get_range()
 
 
 
@@ -101,3 +92,4 @@ class ElectricCar(Car):
 my_tesla=ElectricCar('Tesla', 'Model S', 2016)
 print(my_tesla.full_name_of_car())
 my_tesla.describe_battery()
+
